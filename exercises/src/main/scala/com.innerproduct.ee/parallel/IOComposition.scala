@@ -17,5 +17,5 @@ object IOComposition extends App {
     (hello, world).mapN((_, _) => ())
 
   hw1.unsafeRunSync() // <2>
-  hw2.unsafeRunSync() // <3>
+  hw2.unsafeRunSync() // <3> IO does not run in parallel
 }
